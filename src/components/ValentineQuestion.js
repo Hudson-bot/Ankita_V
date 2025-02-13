@@ -7,7 +7,7 @@ const ValentineQuestion = () => {
 
   const handleResponse = async (answer) => {
     try {
-      await axios.post('http://localhost:5000/api/valentine/response', { answer });
+      await axios.post('https://ankita-v-backend.onrender.com/api/valentine/response', { answer });
       setResponse(answer);
     } catch (error) {
       console.error('Error saving response:', error);
